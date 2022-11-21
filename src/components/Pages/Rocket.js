@@ -3,7 +3,7 @@ import React from 'react';
 function Rocket() {
   return (
     <div>
-      <h2>Rocket's Page</h2>
+      <h2>Rocket Page</h2>
     </div>
   );
 }
