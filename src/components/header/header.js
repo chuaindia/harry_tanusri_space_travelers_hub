@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.css';
-import logo from '../../image/logo.png';
+import logo from '..//image/logo.png';
 
 const Header = () => {
   const links = [
@@ -33,7 +33,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
           <img className="navLogo" src={logo} alt="Logo" />
-          <a className="navbarBrand" href="/">Space Traveler&lsquo;s Hub</a>
+          <a className="navbarBrand" href="/">Space Traveler's Hub</a>
           <button className="navbarToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbarTogglerIcon" />
           </button>
