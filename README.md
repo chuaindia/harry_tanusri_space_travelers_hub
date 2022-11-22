@@ -69,11 +69,6 @@ To get a local copy up and running follow these simple steps.
 - Twitter: [@noqsnoq1](https://twitter.com/twitterhandle)
 - LinkedIn: (https://www.linkedin.com/in/harrison-njuguna-59536314/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
