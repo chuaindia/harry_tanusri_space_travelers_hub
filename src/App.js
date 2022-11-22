@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" />
         <Route path="/missions" />
+        <Route path="/myprofile" />
       </Routes>
     </div>
   );
