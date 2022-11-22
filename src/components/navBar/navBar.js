@@ -4,24 +4,26 @@ import styles from './navBar.module.css';
 
 function NavBar() {
   return (
-    <div className={styles.navbarWrapper}>
-        <div className={styles.navbarContainer}>
-          <img className={styles.navLogo} src="planet.png" alt="Logo" />
-          <h1>Space Travelers Hub</h1>
-        </div>
-        <ul className={styles.navLinks}>
-          <li>
-            <NavLink activeClassName={styles.active} className={styles.link} to="/">Rockets</NavLink>
-          </li>
-          <li>
-            <NavLink activeClassName={styles.active} className={styles.link} to="/missions">Missons</NavLink>
-          </li>
-          <li>
-            <NavLink activeClassName={styles.active} className={styles.profileLink} to="/myprofile">My Profile</NavLink>
-          </li>
-        </ul>
+    <div className={styles.navbar_wrapper}>
+      <div className={styles.navContainer}>
+        <img className={styles.navbar_img} src="planet.png" alt="logo" />
+        <h1>Space Travelers&apos; Hub</h1>
       </div>
-    );
+      <ul className={styles.navlinks}>
+        <li>
+          <NavLink activeClassName={styles.active} className={styles.links} to="/">Rockets</NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName={styles.active} className={styles.links} to="/missions"> Missions </NavLink>
+        </li>
+
+        <li>
+          <NavLink activeClassName={styles.active} className={styles.profilelinks} to="/myprofile">My Profile</NavLink>
+
+        </li>
+      </ul>
+    </div>
+  );
 }
 
 export default NavBar;

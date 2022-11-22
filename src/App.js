@@ -1,4 +1,4 @@
-import { Route, Routes} from 'react-router';
+import { Route, Routes } from 'react-router';
 import NavBar from './components/navBar/navBar';
 import './App.css';
 
@@ -11,7 +11,7 @@ function App() {
         <Route path="/missions" />
         <Route path="/myprofile" />
       </Routes>
-    </div>  
+    </div>
   );
 }
 
