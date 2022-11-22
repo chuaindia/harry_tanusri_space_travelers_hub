@@ -35,8 +35,4 @@
   text-decoration: underline !important;
 }
 
-.links {
-  text-decoration: none;
-  color: #1680fe;
-  padding-inline: 1.2rem;
-}
+.links, .profilelinks { text-decoration: none; color: #1680fe; padding-inline: 1.2rem; } .profilelinks { border-left: 1px solid black; } 
