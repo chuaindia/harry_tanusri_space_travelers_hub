@@ -16,11 +16,6 @@ function NavBar() {
         <li>
           <NavLink activeClassName={styles.active} className={styles.links} to="/missions"> Missions </NavLink>
         </li>
-
-        <li>
-          <NavLink activeClassName={styles.active} className={styles.profilelinks} to="/myprofile">My Profile</NavLink>
-
-        </li>
       </ul>
     </div>
   );
