@@ -1,0 +1,47 @@
+.flex {
+    display: flex;
+  }
+
+.navbarWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  width: 95%;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px gray;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navLogo {
+  width: 50px;
+  height: 50px;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  margin-right: 4rem;
+  width: 25%;
+}
+
+.active {
+  text-decoration: underline !important;
+}
+
+.link,
+.profileLink {
+  text-decoration: none;
+  color: cyan;
+  padding-inline: 1.2rem;
+}
+
+.profileLink {
+  border-left: solid 1px black;
+}
