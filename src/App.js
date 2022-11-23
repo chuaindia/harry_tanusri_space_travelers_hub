@@ -1,20 +1,20 @@
-import { Route, Routes } from 'react-router';
-import NavBar from './components/navBar/navBar';
-import './App.css';
-import Rockets from './page/Rockets/Rockets';
-import Mission from './page/Mission/Mission';
+import React from 'react';
+import './index.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Profile from './navigationPages/profile/profile';
+import Rockets from './components/Rockets';
+import Mission from './navigationPages/mission/mission';
 
-function App() {
-  return (
-    <div className="AppWrapper">
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Rockets />} />
-        <Route exact path="/missions" element={<Mission />} />
-        <Route path="/myprofile" />
-      </Routes>
-    </div>
-  );
-}
+const App = () => (
+  <Router>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Rockets />} />
+      <Route path="/mission" element={<Mission />} />
+      <Route path="/profile" element={<Profile />} />
+    </Routes>
+  </Router>
+);
 
 export default App;
