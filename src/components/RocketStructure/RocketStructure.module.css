@@ -1,0 +1,35 @@
+.RocketStructureContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+.RocketImage {
+  height: 50px;
+  width: 50px;
+}
+
+.RocketTitle {
+  font-size: 20px;
+}
+
+.RocketDescription {
+  font-weight: 300;
+}
+
+.ReserveRocketButton {
+  height: 2rem;
+  width: 8.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+}
+
+.ReserveRocketButton:hover {
+  cursor: pointer;
+  background-color: cyan;
+  color: black;
+}
