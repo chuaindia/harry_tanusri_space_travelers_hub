@@ -5,7 +5,11 @@ import './profile.css';
 
 const Profile = () => {
   const missionState = useSelector((state) => state.mission);
+
   const reservedMission = missionState.filter((mission) => mission.reserved);
+
+  const rockets = useSelector((state) => state.rocket);
+  const reserved = rockets.filter((rocket) => rocket.reserved);
 
   return (
     <div className="profileContainer">
@@ -18,7 +22,18 @@ const Profile = () => {
           </Row>
         ))}
       </Col>
+
+      <Col className="profileColumn">
+        <h3>My Rockets</h3>
+        { reserved.length === 0 && <p>No Reserved Rockets</p>}
+        {reserved.map((rocket) => (
+          <Row key={rocket.id} className="profileRow">
+            <h5>{rocket.name }</h5>
+          </Row>
+        ))}
+      </Col>
     </div>
+
   );
 };
 
