@@ -218,7 +218,7 @@ Example:
 👤 **Tanusri Ghosh**
 
 - GitHub: [@chuaindia](https://github.com/githubhandle)
-- Twitter: [@chuaghoosh25](https://twitter.com/twitterhandle)
+- Twitter: [@chuaghosh25](https://twitter.com/twitterhandle)
 - LinkedIn: (https://linkedin.com/in/tanusri-ghosh-2a56b814/)
 
 
