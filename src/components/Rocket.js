@@ -15,13 +15,13 @@ const RocketItem = (props) => {
     dispatch(bookRocket(id));
   };
   return (
-    <div className="rocket-container">
-      <img alt="rocket" src={image} className="rocket-img" />
-      <div className="rocket-details">
-        <h2 className="rocket-title">{name}</h2>
-        <p className="rocket-description">
+    <div className="RocketContainer">
+      <img alt="rocket" src={image} className="RocketImage" />
+      <div className="RocketDetails">
+        <h2 className="RocketTitle">{name}</h2>
+        <p className="RocketDescription">
           {reserved && (
-          <span className="rocket-badge">
+          <span className="RocketBadge">
             Reserved
           </span>
           )}
@@ -29,9 +29,9 @@ const RocketItem = (props) => {
           {description}
         </p>
         {!reserved ? (
-          <button type="button" className="rocket-reserve-btn" onClick={reserveCancelRocket}>Reserve Rocket</button>
+          <button type="button" className="ReserveRocketButton" onClick={reserveCancelRocket}>Reserve The Rocket</button>
         ) : (
-          <button type="button" className="rocket-cancel-btn" onClick={reserveCancelRocket}>Cancel Reserve</button>
+          <button type="button" className="ReserveCancelButton" onClick={reserveCancelRocket}>Cancel Reservation</button>
         )}
       </div>
     </div>
