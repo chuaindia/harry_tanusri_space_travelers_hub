@@ -7,12 +7,12 @@ const Navbar = () => (
   <>
     <Nav>
       <NavMenu>
-        <NavLink className="nav-logo">
-          <img src={planet} className="planet" alt="planet" />
+        <NavLink className="NavLogo">
+          <img src={planet} className="Planet" alt="planet" />
           <h1>Space Travelers Hub</h1>
         </NavLink>
       </NavMenu>
-      <NavMenu className="nav-links">
+      <NavMenu className="NavLinks">
         <NavLink to="/" activeStyle>
           Rockets
         </NavLink>

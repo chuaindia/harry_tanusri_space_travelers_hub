@@ -1,12 +1,12 @@
-.planet {
+.Planet {
   width: 50px;
 }
 
-.nav-logo h1 {
+.NavLogo h1 {
   margin-left: 20px;
 }
 
-.nav-links {
+.NavLinks {
   display: flex;
   justify-content: center;
   align-items: flex-end;
