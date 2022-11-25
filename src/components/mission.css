@@ -7,13 +7,15 @@
 }
 
 .ActiveMember {
-  color: aliceblue;
-  background: lightseagreen;
+  color: blue;
+  background: pink;
+  border: 1px solid gray;
 }
 
 .NotAMember {
-  color: aliceblue;
-  background: gray;
+  color: blue;
+  background: pink;
+  border: 1px solid gray;
 }
 
 .JoinButton {
