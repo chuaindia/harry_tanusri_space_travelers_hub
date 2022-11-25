@@ -2,7 +2,6 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-// We're using our own custom render function and not RTL's render.
 import renderWithProviders from '../utils/test.util';
 import Mission from '../components/mission';
 
@@ -14,7 +13,6 @@ describe('test for mission component', () => {
   test('displays the right button conditionally using reserved prop', () => {
     renderWithProviders(<Mission description="description" reserved={false} missionName="Space" missionId="FAD123" />);
 
-    // "Not a member" should be in the document while "Active member" should not be in the document because reserved is falsy
     expect(screen.queryByText(/Not a member/i)).not.toBeNull();
     expect(screen.queryByText(/Active member/i)).toBeNull();
   });
