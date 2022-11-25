@@ -22,22 +22,22 @@ const Mission = ({
   };
 
   return (
-    <Row className="ps-2 mission">
-      <Col className="col-3 column">
+    <Row className="ps-2 Mission">
+      <Col className="col-3 Column">
         <h4>{missionName}</h4>
       </Col>
-      <Col className="col-6 column">
+      <Col className="col-6 Column">
         <p>{description}</p>
       </Col>
       <Col className="d-flex align-items-center justify-content-center column">
         {reserved
           ? (
-            <Alert variant="secondary" className="p-1 active_member">
+            <Alert variant="secondary" className="p-1 ActiveMember">
               Active Member
             </Alert>
           )
           : (
-            <Alert variant="secondary" className="p-1 not_a_member">
+            <Alert variant="secondary" className="p-1 NotAMember">
               Not a member
             </Alert>
           )}
@@ -45,8 +45,8 @@ const Mission = ({
       </Col>
       <Col className="d-flex align-items-center justify-content-center">
         {reserved
-          ? <Button variant="danger" className="leave_btn" onClick={() => leaveMissionHandler(missionId)}>Leave Mission</Button>
-          : <Button variant="danger" className="join_btn" onClick={() => joinMissionHandler(missionId)}>Join Mission</Button>}
+          ? <Button variant="danger" className="LeaveButton" onClick={() => leaveMissionHandler(missionId)}>Leave Mission</Button>
+          : <Button variant="danger" className="JoinButton" onClick={() => joinMissionHandler(missionId)}>Join Mission</Button>}
       </Col>
     </Row>
   );
