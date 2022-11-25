@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, Nav, NavMenu } from './navbarElements';
-import planet from '../assets/planet.png';
+import planet from '../page/planet.png';
 import '../App.css';
 
 const Navbar = () => (
