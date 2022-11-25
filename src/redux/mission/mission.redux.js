@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const url = 'https://api.spacexdata.com/v3/missions';
 
-export const allMissions = createAsyncThunk('mission/allMissions', async (_, thunk) => {
+export const missionAll = createAsyncThunk('mission/missionAll', async (_, thunk) => {
   try {
     const response = await axios.get(url);
     return response.data;
@@ -35,7 +35,7 @@ const MissionSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(allMissions.fulfilled, (state, action) => action.payload);
+    builder.addCase(missionAll.fulfilled, (state, action) => action.payload);
   },
 });
 

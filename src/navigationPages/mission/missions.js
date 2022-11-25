@@ -2,15 +2,16 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
-import { allMissions } from '../../redux/mission/mission.redux';
+import { missionAll } from '../../redux/mission/mission.redux';
 import Mission from '../../components/mission';
 
+// usedispatch
 const Missions = () => {
   const dispatch = useDispatch();
   const missionState = useSelector((state) => state.mission);
 
   useEffect(() => {
-    dispatch(allMissions());
+    dispatch(missionAll());
   }, []);
 
   return (
