@@ -1,6 +1,5 @@
 import Axios from 'axios';
 
-// Rocket Actions
 const FETCH_ROCKET = 'spaceTravelersHub/rockets/FETCH_ROCKET';
 const BOOK_ROCKET = 'spaceTravelersHub/rockets/BOOK_ROCKET';
 
@@ -13,8 +12,6 @@ export const bookRocket = (payload) => ({
   type: BOOK_ROCKET,
   payload,
 });
-
-//   Data fetch from API
 
 export const fetchRocketApi = () => async (dispatch) => {
   const returnValue = await Axios.get('https://api.spacexdata.com/v3/rockets');
